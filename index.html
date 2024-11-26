@@ -211,6 +211,7 @@
         
 
         function removeItem(productId){
+            is_delete=confirm("are you sure you want to delete")
             cart=cart.filter((item)=>{
                 return item.id!=productId
             })  
